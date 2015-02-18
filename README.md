@@ -45,6 +45,7 @@
     
     - replace '*string*' with the name of your variable.
 
+###Work in progress
  At the moment, the game starts on the player's turn, add a coin_toss method to mix it up a little. The method should:
 
 i) print a message prompting the player to choose 1 or 2 (representing heads or tails) ii) Store the player's input in a variable -The input will be a string, you need to convert it to an integer using the .to_i method. iii) Generate a random integer between 1 and 2 (inclusive) and store it in a variable. -rand(x) will generate a random number from 0 up to, but excluding x.
