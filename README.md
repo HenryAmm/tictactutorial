@@ -1,17 +1,25 @@
 # TicTacToe Tutorial
 
 ##What you'll need to start:
-1) Ruby
+###1) Ruby
   
   -For Windows click here : https://www.ruby-lang.org/en/documentation/installation/#rubyinstaller
   
   -For Linux/OSx click here: https://rvm.io/rvm/install   (This install Ruby Version Manager)
   
-2) Text Editor
+###2) Text Editor
 
-  -Atom (https://atom.io/)
-  -Sublime Text (http://www.sublimetext.com/3)
+  -Atom https://atom.io/
+    
+  -Sublime Text http://www.sublimetext.com/3
+    
   -Or your favorite editor
+  
+###3) Command Line (Optional)
+  
+   -Eventually you'll want to use the terminal, you may as well start now. For this tutorial, you only need to know    how to change directories.
+  
+   -Go here: http://cli.learncodethehardway.org/book/ and complete lessons 1-7 (Change directory).
   
 ##Tutorial
 
