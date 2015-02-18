@@ -1,5 +1,20 @@
 # TicTacToe Tutorial
 
+##What you'll need to start:
+1) Ruby
+  
+  -For Windows click here : https://www.ruby-lang.org/en/documentation/installation/#rubyinstaller
+  
+  -For Linux/OSx click here: https://rvm.io/rvm/install   (This install Ruby Version Manager)
+  
+2) Text Editor
+
+  -Atom (https://atom.io/)
+  -Sublime Text (http://www.sublimetext.com/3)
+  -Or your favorite editor
+  
+##Tutorial
+
 1) Download the **tictac_ex.rb** file by cloning the Github repository or by clicking on the file and copying it's contents. 
 
 2) Open the **tictac_ex.rb** file in a text editor (e.g. Atom, Sublime Text ) 
