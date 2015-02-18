@@ -29,7 +29,7 @@
 
 3) Open a Terminal window and navigate to the directory containing the **tictac_ex.rb** file.
 
-4) To run the program, type ruby tictac_ex.rb.
+4) To run the program, type *ruby tictac_ex.rb*
 
 5) Find the *newgame* method, change the introductory message to a more positive one. 
 (*puts* : prints a message surrounded by " ") 
@@ -54,4 +54,4 @@ iv) Call either the comp_turn or player_turn method depending on the result of t
 
 6) The win_check method is a little unwieldy. Divide the method into 2 new methods: 1 to check for a win, and 1 to announce the win.
 
-def flip_start puts "Let's flip a coin to see who starts." puts "Enter 1 for heads; 2 for tails >" choice = STDIN.gets.to_i if (rand(2)+1) == choice puts "You go first." @turn = player_turn else puts "I go first." @turn = comp_turn end end
+
