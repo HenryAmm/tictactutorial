@@ -1,3 +1,44 @@
+
+
+
+#DON'T LOOK AT THIS CODE UNTIL YOU'VE TRIED TO COMPLETE THE TUTORIAL YOURSELF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 require 'colored'
 class TicTac
   
