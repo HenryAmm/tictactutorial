@@ -5,7 +5,7 @@
   
   -For Windows click here : https://www.ruby-lang.org/en/documentation/installation/#rubyinstaller
   
-  -For Linux/OSx click here: https://rvm.io/rvm/install   (This install Ruby Version Manager)
+  -For Linux/OSx click here: https://rvm.io/rvm/install   
   
 ###2) Text Editor
 
