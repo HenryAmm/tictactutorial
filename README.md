@@ -2,49 +2,63 @@
 
 ##What you'll need to start:
 ###1) Ruby
-  
+
   -For Windows click here : https://www.ruby-lang.org/en/documentation/installation/#rubyinstaller
-  
-  -For Linux/OSx click here: https://rvm.io/rvm/install   
-  
+
+  -For Linux/OSx click here: https://rvm.io/rvm/install
+
 ###2) Text Editor
 
   -Atom https://atom.io/
-    
+
   -Sublime Text http://www.sublimetext.com/3
-    
+
   -Or your favorite editor
-  
+
 ###3) Command Line (Optional)
-  
+
    -Eventually you'll want to use the terminal, you may as well start now. For this tutorial, you only need to know    how to change directories.
-  
+
    -Go here: http://cli.learncodethehardway.org/book/ and complete lessons 1-7 (Change directory).
-  
+
 ##Tutorial
 
-1) Download the **tictac_ex.rb** file by cloning the Github repository or by clicking on the file and copying it's contents. 
+1) In order to get coloured output on the command line, we will use a Ruby Gem (package)
+called 'colored'.
 
-2) Open the **tictac_ex.rb** file in a text editor (e.g. Atom, Sublime Text ) 
+  -To install it, open a terminal and type: *gem install colored*
 
-3) Open a Terminal window and navigate to the directory containing the **tictac_ex.rb** file.
+2) Download the **tictac_ex.rb** file by cloning the Github repository or by clicking on the file and copying it's contents.
 
-4) To run the program, type *ruby tictac_ex.rb*
+3) Open the **tictac_ex.rb** file in a text editor (e.g. Atom, Sublime Text )
 
-5) Find the *newgame* method, change the introductory message to a more positive one. 
-(*puts* : prints a message surrounded by " ") 
+4) Open a Terminal window and navigate to the directory containing the **tictac_ex.rb** file.
+
+5) To run the program at any time, type *ruby tictac_ex.rb* .
+
+6) Find the **newgame** method, change the introductory message to a more positive one.
+(*puts* : prints a message surrounded by " ")
 
   - Allow the player to input their name in the *newgame* method.
 
   - Use the instance variable '@player' and set it equal to *STDIN.gets.chomp*
-  
-    - *gets*: 'get string' 
+
+    - *gets*: 'get string'
     - *chomp*: removes leading or trailing spaces
-    
-  - Say hello to the player using string interpolation. *puts "Hello #{string}"* 
-    
+
+  - Say hello to the player using **string interpolation**. *puts "Hello #{string}"*
+
     - replace '*string*' with the name of your variable.
 
+7) Find the player_turn method and complete it.
+  -Replace each line of commented text with a line of code.
+
+  -If you need help on the third line (variable increment), look for an example
+   elsewhere in the code.
+
+  -To call a method (line 4), you simply type the method name (without the 'def').
+
+8)
 ###Work in progress
  At the moment, the game starts on the player's turn, add a coin_toss method to mix it up a little. The method should:
 
@@ -53,5 +67,3 @@ i) print a message prompting the player to choose 1 or 2 (representing heads or 
 iv) Call either the comp_turn or player_turn method depending on the result of the 'coin toss'
 
 6) The win_check method is a little unwieldy. Divide the method into 2 new methods: 1 to check for a win, and 1 to announce the win.
-
-

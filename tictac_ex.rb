@@ -47,10 +47,10 @@ class TicTac
 
 
   def player_turn
-    puts "It's your turn."
-    puts "Turn ##{turn_number}"
-    @turn_number += 1   #Each turn, the @turn_number instance variable is increased by 1.
-    
+    #print a message to let the player know it's their turn
+    #print the current turn using string interpolation
+    #increase the '@turn_number' instance variable by one
+
   end
 
   def comp_turn
