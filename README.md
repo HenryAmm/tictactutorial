@@ -52,14 +52,28 @@ called 'colored'.
 
 7) Find the player_turn method and complete it.
 
-    -Replace each line of commented text with a line of code.
+  - Replace each line of commented text with a line of code.
 
-    -If you need help on the third line (variable increment), look for an example
+  - If you need help on the third line (variable increment), look for an example
    elsewhere in the code.
 
-    -To call a method (line 4), you simply type the method name (without the 'def').
+  - To call a method (line 4), you simply type the method name (without the 'def').
 
-8)
+8) The end_check method
+
+   *  def end_check
+   #add if, elsif and else statements to complete this method
+   @turn_number == 10
+   #print a message telling the player the game is over.
+   #tell the program to exit
+   @turn_number > 4   #if at least 5 moves have been made, check for a winner
+   #call the win_check method
+   #else
+   # call the turn method
+
+   #end
+   end*
+   
 ###Work in progress
  At the moment, the game starts on the player's turn, add a coin_toss method to mix it up a little. The method should:
 

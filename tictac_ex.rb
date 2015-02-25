@@ -30,6 +30,7 @@ class TicTac
   def newgame
     puts "You're about to play TicTacToe against a computer. Do you really think you have a chance of winning?"
     puts "Enter your name so I can print it on the consolation prize: "
+    #Declare a variable and set it equal to user input
     #STDIN.gets.chomp is a standard syntax for getting string input.
   end
 
@@ -50,6 +51,7 @@ class TicTac
     #print a message to let the player know it's their turn
     #print the current turn using string interpolation
     #increase the '@turn_number' instance variable by one
+    #call the player_mark method
 
   end
 
@@ -106,14 +108,16 @@ class TicTac
   end
 
   def end_check
-      if @turn_number == 10
-      puts "GAME OVER, IT'S A DRAW."
-      exit(0)
-    elsif @turn_number > 4   #if at least 5 moves have been made, check for a winner
-        win_check
-    else
-      turn
-    end
+    #add if, elsif and else statements to complete this method
+    @turn_number == 10
+          #print a message telling the player the game is over.
+          #tell the program to exit
+     @turn_number > 4   #if at least 5 moves have been made, check for a winner
+        #call the win_check method
+     #else
+        # call the turn method
+
+    #end
   end
 
   def win_check
@@ -152,4 +156,5 @@ end
 game1= TicTac.new  #Creates a new instance of the TicTac class called 'game1'
 game1.setup_board
 game1.newgame
-game1.player_turn  #Calls the player_turn method on the game1 object.
+game1.print_board
+#game1.player_turn  #Calls the player_turn method on the game1 object.
