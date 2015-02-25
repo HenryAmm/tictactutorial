@@ -26,7 +26,7 @@
 1) In order to get coloured output on the command line, we will use a Ruby Gem (package)
 called 'colored'.
 
-  -To install it, open a terminal and type: *gem install colored*
+    -To install it, open a terminal and type: *gem install colored*
 
 2) Download the **tictac_ex.rb** file by cloning the Github repository or by clicking on the file and copying it's contents.
 
@@ -51,12 +51,13 @@ called 'colored'.
     - replace '*string*' with the name of your variable.
 
 7) Find the player_turn method and complete it.
-  -Replace each line of commented text with a line of code.
 
-  -If you need help on the third line (variable increment), look for an example
+    -Replace each line of commented text with a line of code.
+
+    -If you need help on the third line (variable increment), look for an example
    elsewhere in the code.
 
-  -To call a method (line 4), you simply type the method name (without the 'def').
+    -To call a method (line 4), you simply type the method name (without the 'def').
 
 8)
 ###Work in progress
