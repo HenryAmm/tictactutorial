@@ -59,21 +59,24 @@ called 'colored'.
 
   - To call a method (line 4), you simply type the method name (without the 'def').
 
-8) The end_check method
+8) The end_check method needs to be completed with some logic.
+There are three possibilities when checking for the end game:
+    -All spaces are occupied (i.e. 9 turns have passed),
+    -or at least 4 moves have been made and one player may have won.
+    -or only 1-3 moves have been made and you need to keep going.
 
-   *  def end_check
-   #add if, elsif and else statements to complete this method
-   @turn_number == 10
-   #print a message telling the player the game is over.
-   #tell the program to exit
-   @turn_number > 4   #if at least 5 moves have been made, check for a winner
-   #call the win_check method
-   #else
-   # call the turn method
+      -*@turn_number == 10*
+      -*@turn_number > 4*
 
-   #end
-   end*
-   
+      i)print a message telling the player the game is over.
+        tell the program to exit
+
+      ii)call the win_check method
+
+      iii)call the turn method
+
+
+
 ###Work in progress
  At the moment, the game starts on the player's turn, add a coin_toss method to mix it up a little. The method should:
 
