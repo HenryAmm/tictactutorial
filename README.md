@@ -78,7 +78,7 @@ called 'colored'.
 
 There are three possibilities when checking for the end game:
 
-    -All spaces are occupied (i.e. 9 turns have passed), (@turn_number == 10)
+    -All spaces are occupied (i.e. 9 turns have passed), (@turn_number > 10)
 
     -or at least 4 moves have been made and one player may have won. (@turn_number > 4)
 

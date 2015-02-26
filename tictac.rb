@@ -41,11 +41,11 @@
 
 require 'colored'
 class TicTac
-  
-  attr_accessor :player, :turn, :turn_number
 
-  def initialize(player)
-    @player = player
+  attr_accessor  :turn, :turn_number
+
+  def initialize
+
     @turn = turn
     @turn_number=1
     @cells= []
@@ -72,6 +72,13 @@ class TicTac
     puts
   end
 
+  def newgame
+    puts "You're about to play TicTacToe against a computer. Do you really think you have a chance of winning?"
+    puts "Enter your name so I can print it on the consolation prize: "
+    @player = STDIN.gets.chomp
+    flip_start
+  end
+
   def flip_start
     puts "Let's flip a coin to see who starts."
     puts "Enter 1 for heads; 2 for tails >"
@@ -94,6 +101,7 @@ class TicTac
 
   def comp_turn
     puts "It's my turn."
+    puts "Turn ##{turn_number}"
     @turn_number+=1
     comp_mark
   end
@@ -117,13 +125,9 @@ class TicTac
   end
 
   def comp_mark
-
-
     choice = @choices.shuffle.pop
     @cells[choice]= "O".blue
     @choices.delete(choice)
-
-
     print_board
     end_check
     player_turn
@@ -145,7 +149,7 @@ class TicTac
   end
 
   def end_check
-      if @turn_number == 10
+      if @turn_number > 10
       puts "GAME OVER, IT'S A DRAW."
       exit(0)
     elsif @turn_number > 3
@@ -171,7 +175,7 @@ class TicTac
           puts "YOU WIN #{@player}!"
           exit(0)
         elsif comp_count == 3
-          puts "You lose."
+          puts "You lose #{@player}!."
           exit(0)
         end
 
@@ -184,6 +188,6 @@ class TicTac
 
 end
 
-game1= TicTac.new("Your Name")
+game1= TicTac.new
 game1.setup_board
-game1.flip_start
+game1.newgame
