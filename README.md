@@ -120,7 +120,7 @@ There are three possibilities when checking for the end game:
 
      - e.g. -rand(10) will generate a random number from 0 to 9.
 
-     -Remember, you want to 1 or 2, not 0 or 1. How will you do that?
+     -Remember, you want 1 or 2, not 0 or 1. How will you do that?
 
     iv) Call either the comp_turn or player_turn method depending on the result
     of the 'coin toss'
