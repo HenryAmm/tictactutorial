@@ -149,8 +149,7 @@ There are three possibilities when checking for the end game:
 
  This can be done using only commands already present in the code.
 
-  One approach might be to create a copy of board (i.e. create new local variable and assign it
-   current contents of @cells).
+  One approach might be to create a copy of board (use '@cells.dup' to duplicate the board).
 
    Then the computer could play a test move in the board copy and see if it leads to a win.
    If so, make that move in the 'real' board.
