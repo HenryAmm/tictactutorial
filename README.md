@@ -30,7 +30,7 @@ called 'colored'.
 
 
     -gem install colored
-
+    [You may need to run the command as a superuser (or root) by putting sudo infront to make the whole command 'sudo gem install colored' - Mac/Linux Only]
 
 2) Download the **tictac_ex.rb** file by cloning the Github repository or by clicking on the file and copying it's contents.
 
