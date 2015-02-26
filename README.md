@@ -29,8 +29,10 @@ called 'colored'.
     - To install it, open a terminal and type:
 
 
-    -gem install colored
-
+    gem install colored
+    [You may need to run the command as a superuser (or root) 
+    by putting sudo infront to make the whole command 
+    'sudo gem install colored' - Mac/Linux Only]
 
 2) Download the **tictac_ex.rb** file by cloning the Github repository or by clicking on the file and copying it's contents.
 
@@ -43,7 +45,7 @@ called 'colored'.
 
 5) To run the program at any time, type
 
-    -ruby tictac_ex.rb
+    ruby tictac_ex.rb
 
 
 6) Find the **newgame** method, change the introductory message to a more positive one.
