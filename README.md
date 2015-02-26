@@ -138,9 +138,10 @@ There are three possibilities when checking for the end game:
 
     - 1) Can I win by completing a row?
     - 2) Can I win by completing a diagonal?
-    - 3) If the centre is unoccupied, take it.
-    - 4) If a corner is unoccupied, take it.
-    - 5) Otherwise, make a random move.
+    - 3) If the player can next turn, block them.
+    - 4) If the centre is unoccupied, take it.
+    - 5) If a corner is unoccupied, take it.
+    - 6) Otherwise, make a random move.
 
 
  The AI will consist of either a single method or separate methods for each of the
