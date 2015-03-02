@@ -28,10 +28,12 @@ class TicTac
   end
 
   def newgame
-    puts "You're about to play TicTacToe against a computer. Do you really think you have a chance of winning?"
+    puts "Welcome to this game. Win £1,000,000. Yay"
     puts "Enter your name so I can print it on the consolation prize: "
     #Declare a variable and set it equal to user input
     #STDIN.gets.chomp is a standard syntax for getting string input.
+    @player = STDIN.gets.chomp
+    puts "Hello #{@player}"
   end
 
   def print_board
@@ -48,11 +50,10 @@ class TicTac
 
 
   def player_turn
-    #print a message to let the player know it's their turn
-    #print the current turn using string interpolation
-    #increase the '@turn_number' instance variable by one
-    #call the player_mark method
-
+    puts "It's your turn #{@player}"
+    puts "It's turn #{@turn_number}"
+    @turn_number += 1
+    player_mark
   end
 
   def comp_turn
@@ -108,50 +109,69 @@ class TicTac
   end
 
   def end_check
-    #add if, elsif and else statements to complete this method
-    @turn_number == 10
-          #print a message telling the player the game is over.
-          #tell the program to exit
-     @turn_number > 4   #if at least 5 moves have been made, check for a winner
-        #call the win_check method
-     #else
-        # call the turn method
-
-    #end
+    if @turn_number == 10
+       puts "You lost. Ha!"
+       exit
+    elsif @turn_number > 4   #if at least 5 moves have been made, check for a winner
+          win_check
+    else player_turn
+    end
   end
 
   def win_check
-    player_count = 0
-    comp_count = 0
+    @player_count = 0
+    @comp_count = 0
     #This each loop goes through each @wins combination.
     @wins.each do |sub_array|
       sub_array.each do |cell|
         if @cells[cell-1] == "X".red
-          player_count += 1
+          @player_count += 1
+          win_announce
 
         elsif @cells[cell-1] == "O".blue
-          comp_count +=1
+          @comp_count +=1
+          win_announce
         end
+      end
+    end
         #IF either the player or computer has 3 marks corresponding to one of the
+#    #reset the counts for each @wins combination checked.
+  #  player_count = 0
+  #  comp_count = 0
         #@wins subarrays, they win.
+end
 
-        if player_count == 3
+def win_announce
+        if @player_count == 3
           puts "YOU WIN #{@player}!"
           exit(0)
-        elsif comp_count == 3
+        elsif @comp_count == 3
           puts "You lose- I warned you."
           exit(0)
         end
 
     end
-    #reset the counts for each @wins combination checked.
-    player_count = 0
-    comp_count = 0
+
+
+
+
+
+    def coin_toss
+        puts "Choose a number, 1 or 2."
+        toss = gets.chomp.to_i
+        result = rand(1..3)
+        if toss == result
+            player_turn
+        else
+            computer_turn
+        end
     end
-  end
 
 
-end
+
+  end #This is it.
+
+
 
 game1= TicTac.new  #Creates a new instance of the TicTac class called 'game1'
 game1.setup_board

@@ -105,9 +105,9 @@ There are three possibilities when checking for the end game:
     (representing heads or tails)
 
     ii) Store the player's input in a variable. The input will be a string, you
-     need to convert it to an integer using the '.to_i' method.
+     need to convert it to an integer using the *.to_i* method.
 
-        - methods can be 'chained' together like this: choice.chomp.downCase
+        - methods can be 'chained' together like this: *choice.chomp.downCase*
 
         - This example takes the variable 'choice' and removes extra whitespace(chomp),
         then it converts the 'choice' string to lowercase letters.
